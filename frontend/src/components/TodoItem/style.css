@@ -1,0 +1,47 @@
+.todo-item {
+  box-sizing: border-box;
+  padding: 14px 18px;
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  text-align: left;
+  grid-gap: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.plain-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border: solid #1779ba 1px;
+  border-radius: 2px;
+  margin: 3px 1px 0px 6px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+input[type="checkbox"]:checked {
+  background-color: #1779ba;
+}
+input[type="checkbox"]:checked::after {
+  content: "\2713";
+  color: white;
+  top: -1px;
+  left: 1px;
+  font-weight: bold;
+  position: relative;
+}

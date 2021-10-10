@@ -1,0 +1,64 @@
+.header {
+  padding: 40px 0px;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+}
+
+.todo-item-list > :nth-child(odd) {
+  background-color: #dde9f1;
+}
+
+.footer {
+  margin-top: 20px;
+  border-top: 1px dotted #cccccc;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.debug-menu {
+  font-size: 0.9em;
+  text-align: center;
+  padding: 6px;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+
+.debug-menu-contents {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  grid-gap: 4px;
+}
+
+.debug-menu input {
+  width: 100%;
+}
+
+.items-remaining {
+  padding-left: 10px;
+}
+
+.completed {
+  padding-right: 10px;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: #069;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.link-button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
